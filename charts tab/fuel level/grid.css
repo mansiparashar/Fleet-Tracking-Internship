@@ -4,7 +4,7 @@
 }
 
 .col:first-child {
-    margin-left: -7.03%;
+    margin-left: -11.03%;
 }
 
 .span-2-of-3 {
@@ -19,9 +19,12 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 1022px) {
+@media only screen and (max-width: 1070px) {
+    .col:first-child {
+        margin-left: -12.03%;
+    }
     .span-2-of-3 {
-        width: 59%;
+        width: 60%;
     }
     .span-1-of-3 {
         width: 40%;
