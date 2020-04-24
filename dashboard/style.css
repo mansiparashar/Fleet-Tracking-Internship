@@ -1,0 +1,1126 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+html {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.dashboard {
+    width: 100%;
+    height: 40px;
+    background-color: #234292;
+}
+
+.dashboard ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 5px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.help-dropdown-content {
+    display: none;
+    top: 40px;
+    right: 5px;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    overflow: auto;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.help-dropdown-content li ul li {
+    color: black;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.help-dropdown-content li ul li:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.nav-right {
+    float: right;
+    padding-right: 5px;
+}
+
+.edit:hover,
+.questions:hover {
+    cursor: pointer;
+}
+
+
+/* CONTROL ITEMS */
+
+.control-items {
+    background-color: #ffffff;
+    padding: 10px 4px 10px 4px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.14);
+}
+
+.travel-distance,
+.total-trip,
+.driving-duration,
+.idle-duration,
+.stop-duration,
+.inactive-duration,
+.average-speed,
+.maximum-speed {
+    display: inline-block;
+    height: 90px;
+    margin: 2px 5px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.14);
+    -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
+    transition: background-color 0.2s, -webkit-transform 0.2s;
+    -o-transition: transform 0.2s, background-color 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
+    transition: transform 0.2s, background-color 0.2s, -webkit-transform 0.2s;
+}
+
+.travel-distance:hover,
+.total-trip:hover,
+.driving-duration:hover,
+.idle-duration:hover,
+.stop-duration:hover,
+.inactive-duration:hover,
+.average-speed:hover,
+.maximum-speed:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #f8f8f8cc;
+}
+
+
+/* Travel Distance */
+
+.travel-distance-values,
+.total-trip-values,
+.driving-duration-values,
+.idle-duration-values,
+.stop-duration-values,
+.inactive-duration-values,
+.average-speed-values,
+.maximum-speed-values {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.travel-distance-icon img,
+.total-trip-icon img,
+.driving-duration-icon img,
+.idle-duration-icon img,
+.stop-duration-icon img,
+.inactive-duration-icon img,
+.average-speed-icon img,
+.maximum-speed-icon img {
+    position: block;
+    float: right;
+    height: 40px;
+    width: auto;
+    position: relative;
+    bottom: 10px;
+    right: 1%;
+}
+
+.travel-distance-value,
+.total-trip-value,
+.driving-duration-value,
+.idle-duration-value,
+.stop-duration-value,
+.inactive-duration-value,
+.average-speed-value,
+.maximum-speed-value {
+    color: #26A1Fe;
+    font-weight: 700;
+    font-style: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px 0px 0px 5px;
+    font-size: 20px;
+}
+
+.travel-distance-unit,
+.total-trip-unit,
+.driving-duration-unit,
+.idle-duration-unit,
+.stop-duration-unit,
+.inactive-duration-unit,
+.average-speed-unit,
+.maximum-speed-unit {
+    margin-top: 5px;
+    font-size: 12px;
+    padding: 0px 0px 0px 5px;
+    color: #909090;
+}
+
+.travel-distance-heading,
+.total-trip-heading,
+.driving-duration-heading,
+.idle-duration-heading,
+.stop-duration-heading,
+.inactive-duration-heading,
+.average-speed-heading,
+.maximum-speed-heading {
+    text-align: left;
+    padding: 3px;
+    margin-bottom: 3px;
+    font-size: 13px;
+    color: #848484;
+    font-weight: 500;
+}
+
+
+/* Total Trip */
+
+.total-trip-value {
+    color: #6775A9;
+}
+
+
+/* Driving Duration */
+
+.driving-duration-value {
+    color: #2CD6B9;
+}
+
+
+/* Idle Duration */
+
+.idle-duration-value {
+    color: #FCAF17;
+}
+
+
+/* Stop Duration */
+
+.stop-duration-value {
+    color: #EA6564;
+}
+
+
+/* Inactive Duration */
+
+.inactive-duration-value {
+    color: #259DFD;
+}
+
+
+/* Average Speed */
+
+.average-speed-value {
+    color: #77C844;
+}
+
+
+/* Average Speed */
+
+.maximum-speed-value {
+    color: #83A3B8;
+}
+
+
+/* Main Dashboard */
+
+.row-1 li,
+.row-2 li,
+.row-3 li,
+.row-4 li,
+.row-5 li,
+.row-6 li {
+    list-style: none;
+    float: left;
+    background-color: #ffffff;
+    margin: 10px 5px 10px 5px;
+}
+
+.fleet-parking-box,
+.fleet-utilisation-box,
+.fleet-inactive-box,
+.top-10-bad-drivers-box,
+.fleet-violation-box,
+.gps-model-summary-box,
+.safety-score-box,
+.expense-history-box,
+.project-vs-total-object-box,
+.fuel-refil-vs-drain-box,
+.postpaid-user-detail-box,
+.fuel-vs-distance-box,
+.fleet-idling-box,
+.travel-distance-box,
+.total-trip-box,
+.driving-duration-box,
+.idle-duration-box,
+.stop-duration-box,
+.inactive-duration-box,
+.average-speed-box,
+.maximum-speed-box {
+    width: 100%;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.fleet-parking-heading,
+.fleet-parking-components,
+.fleet-utilisation-heading,
+.fleet-utilisation-components,
+.fleet-inactive-heading,
+.fleet-inactive-components,
+.top-10-bad-drivers-heading,
+.top-10-bad-drivers-components,
+.fleet-violation-heading,
+.fleet-violation-components,
+.gps-model-summary-heading,
+.gps-model-summary-components,
+.safety-score-heading,
+.safety-score-components,
+.expense-history-heading,
+.expense-history-components,
+.project-vs-total-object-heading,
+.project-vs-total-object-components,
+.fuel-refil-vs-drain-heading,
+.fuel-refil-vs-drain-components,
+.postpaid-user-detail-heading,
+.postpaid-user-detail-components,
+.fuel-vs-distance-heading,
+.fuel-vs-distance-components,
+.fleet-idling-heading,
+.fleet-idling-components,
+.travel-distance-section-heading,
+.travel-distance-components,
+.total-trip-section-heading,
+.total-trip-components,
+.driving-duration-section-heading,
+.driving-duration-components,
+.idle-duration-section-heading,
+.idle-duration-components,
+.stop-duration-section-heading,
+.stop-duration-components,
+.inactive-duration-section-heading,
+.inactive-duration-components,
+.average-speed-section-heading,
+.average-speed-components,
+.maximum-speed-section-heading,
+.maximum-speed-components {
+    display: inline-block;
+}
+
+.fleet-parking-components,
+.fleet-utilisation-components,
+.fleet-inactive-components,
+.top-10-bad-drivers-components,
+.fleet-violation-components,
+.gps-model-summary-components,
+.safety-score-components,
+.expense-history-components,
+.project-vs-total-object-components,
+.fuel-refil-vs-drain-components,
+.postpaid-user-detail-components,
+.fuel-vs-distance-components,
+.fleet-idling-components,
+.travel-distance-components,
+.total-trip-components,
+.driving-duration-components,
+.idle-duration-components,
+.stop-duration-components,
+.inactive-duration-components,
+.average-speed-components,
+.maximum-speed-components {
+    float: right;
+}
+
+.fleet-parking-graph-icon,
+.fleet-parking-table-icon,
+.fleet-parking-day,
+.fleet-utilisation-graph-icon,
+.fleet-utilisation-table-icon,
+.fleet-utilisation-day,
+.fleet-inactive-graph-icon,
+.fleet-inactive-table-icon,
+.fleet-inactive-day,
+.top-10-bad-drivers-graph-icon,
+.top-10-bad-drivers-table-icon,
+.top-10-bad-drivers-day,
+.fleet-violation-graph-icon,
+.fleet-violation-table-icon,
+.fleet-violation-day,
+.gps-model-summary-graph-icon,
+.gps-model-summary-table-icon,
+.gps-model-summary-day,
+.safety-score-graph-icon,
+.safety-score-table-icon,
+.safety-score-day,
+.expense-history-graph-icon,
+.expense-history-table-icon,
+.expense-history-day,
+.project-vs-total-object-graph-icon,
+.project-vs-total-object-table-icon,
+.project-vs-total-object-day,
+.fuel-refil-vs-drain-graph-icon,
+.fuel-refil-vs-drain-table-icon,
+.fuel-refil-vs-drain-day,
+.postpaid-user-detail-graph-icon,
+.postpaid-user-detail-table-icon,
+.postpaid-user-detail-day,
+.fuel-vs-distance-graph-icon,
+.fuel-vs-distance-table-icon,
+.fuel-vs-distance-day,
+.fleet-idling-graph-icon,
+.fleet-idling-table-icon,
+.fleet-idling-day,
+.travel-distance-graph-icon,
+.travel-distance-table-icon,
+.travel-distance-day,
+.total-trip-graph-icon,
+.total-trip-table-icon,
+.total-trip-day,
+.driving-duration-graph-icon,
+.driving-duration-table-icon,
+.driving-duration-day,
+.idle-duration-graph-icon,
+.idle-duration-table-icon,
+.idle-duration-day,
+.stop-duration-graph-icon,
+.stop-duration-table-icon,
+.stop-duration-day,
+.inactive-duration-graph-icon,
+.inactive-duration-table-icon,
+.inactive-duration-day,
+.average-speed-graph-icon,
+.average-speed-table-icon,
+.average-speed-day,
+.maximum-speed-graph-icon,
+.maximum-speed-table-icon,
+.maximum-speed-day {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+.fleet-parking-day,
+.fleet-utilisation-day,
+.fleet-inactive-day,
+.top-10-bad-drivers-day,
+.fleet-violation-day,
+.gps-model-summary-day,
+.safety-score-day,
+.expense-history-day,
+.project-vs-total-object-day,
+.fuel-refil-vs-drain-day,
+.postpaid-user-detail-day,
+.fuel-vs-distance-day,
+.fleet-idling-day,
+.travel-distance-day,
+.total-trip-day,
+.driving-duration-day,
+.idle-duration-day,
+.stop-duration-day,
+.inactive-duration-day,
+.average-speed-day,
+.maximum-speed-day {
+    padding-top: 5px;
+}
+
+.fleet-parking-graph-icon:hover,
+.fleet-parking-table-icon:hover,
+.fleet-utilisation-graph-icon:hover,
+.fleet-utilisation-table-icon:hover,
+.fleet-inactive-graph-icon:hover,
+.fleet-inactive-table-icon:hover,
+.top-10-bad-drivers-graph-icon:hover,
+.top-10-bad-drivers-table-icon:hover,
+.fleet-violation-graph-icon:hover,
+.fleet-violation-table-icon:hover,
+.gps-model-summary-graph-icon:hover,
+.gps-model-summary-table-icon:hover,
+.safety-score-graph-icon:hover,
+.safety-score-table-icon:hover,
+.expense-history-graph-icon:hover,
+.expense-history-table-icon:hover,
+.project-vs-total-object-graph-icon:hover,
+.project-vs-total-object-table-icon:hover,
+.fuel-refil-vs-drain-graph-icon:hover,
+.fuel-refil-vs-drain-table-icon:hover,
+.postpaid-user-detail-graph-icon:hover,
+.postpaid-user-detail-table-icon:hover,
+.fuel-vs-distance-graph-icon:hover,
+.fuel-vs-distance-table-icon:hover,
+.fleet-idling-graph-icon:hover,
+.fleet-idling-table-icon:hover,
+.travel-distance-graph-icon:hover,
+.travel-distance-table-icon:hover,
+.total-trip-graph-icon:hover,
+.total-trip-table-icon:hover,
+.driving-duration-graph-icon:hover,
+.driving-duration-table-icon:hover,
+.idle-duration-graph-icon:hover,
+.idle-duration-table-icon:hover,
+.stop-duration-graph-icon:hover,
+.stop-duration-table-icon:hover,
+.inactive-duration-graph-icon:hover,
+.inactive-duration-table-icon:hover,
+.average-speed-graph-icon:hover,
+.average-speed-table-icon:hover,
+.maximum-speed-graph-icon:hover,
+.maximum-speed-table-icon:hover {
+    cursor: pointer;
+}
+
+.fleet-parking-graph,
+.fleet-utilisation-graph,
+.fleet-inactive-graph,
+.top-10-bad-drivers-graph,
+.fleet-violation-graph,
+.gps-model-summary-graph,
+.safety-score-graph,
+.expense-history-graph,
+.project-vs-total-object-graph,
+.fuel-refil-vs-drain-graph,
+.postpaid-user-detail-graph,
+.fuel-vs-distance-graph,
+.fleet-idling-graph,
+.travel-distance-graph,
+.total-trip-graph,
+.driving-duration-graph,
+.idle-duration-graph,
+.stop-duration-graph,
+.inactive-duration-graph,
+.average-speed-graph,
+.maximum-speed-graph {
+    display: none;
+}
+
+.fleet-parking,
+.renewal-reminders-outer-box,
+.fleet-utilisation,
+.fleet-inactive,
+.top-10-bad-drivers,
+.map,
+.fleet-violation,
+.gps-model-summary,
+.safety-score,
+.expense-history,
+.project-vs-total-object,
+.fuel-refil-vs-drain,
+.postpaid-user-detail,
+.fuel-vs-distance,
+.object-status,
+.fleet-idling,
+.travel-distance-section-modal,
+.total-trip-section-modal,
+.driving-duration-section-modal,
+.idle-duration-section-modal,
+.stop-duration-section-modal,
+.inactive-duration-section-modal,
+.average-speed-section-modal,
+.maximum-speed-section-modal {
+    width: 100%;
+    background-color: #ffffff;
+    height: 330px;
+}
+
+.renewal-reminders,
+.prepaid-user-detail,
+.object-health,
+.maintainance-reminder {
+    height: 160px;
+}
+
+.fleet-parking,
+.renewal-reminders,
+.prepaid-user-detail,
+.fleet-utilisation,
+.fleet-inactive,
+.object-health,
+.maintainance-reminder,
+.top-10-bad-drivers,
+.map,
+.fleet-violation,
+.gps-model-summary,
+.safety-score,
+.expense-history,
+.project-vs-total-object,
+.fuel-refil-vs-drain,
+.postpaid-user-detail,
+.fuel-vs-distance,
+.object-status,
+.fleet-idling,
+.travel-distance-section-modal,
+.total-trip-section-modal,
+.driving-duration-section-modal,
+.idle-duration-section-modal,
+.stop-duration-section-modal,
+.inactive-duration-section-modal,
+.average-speed-section-modal,
+.maximum-speed-section-modal {
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.14);
+}
+
+.renewal-reminders,
+.object-health {
+    margin-bottom: 10px;
+}
+
+.scrolable-content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 90%;
+    width: 100%;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    overflow-y: auto;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+}
+
+.renewal-reminders .scrolable-content,
+.prepaid-user-detail .scrolable-content,
+.object-health .scrolable-content,
+.maintainance-reminder .scrolable-content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 120px;
+    width: 100%;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+}
+
+.fleet-parking-heading,
+.renewal-reminders-heading,
+.prepaid-user-detail-heading,
+.fleet-utilisation-heading,
+.fleet-inactive-heading,
+.object-health-heading,
+.maintainance-reminder-heading,
+.top-10-bad-drivers-heading,
+.fleet-violation-heading,
+.gps-model-summary-heading,
+.safety-score-heading,
+.expense-history-heading,
+.project-vs-total-object-heading,
+.fuel-refil-vs-drain-heading,
+.postpaid-user-detail-heading,
+.fuel-vs-distance-heading,
+.object-status-heading,
+.fleet-idling-heading,
+.travel-distance-section-heading,
+.total-trip-section-heading,
+.driving-duration-section-heading,
+.idle-duration-section-heading,
+.stop-duration-section-heading,
+.inactive-duration-section-heading,
+.average-speed-section-heading,
+.maximum-speed-section-heading {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 5px;
+}
+
+.fleet-parking-table,
+.renewal-reminders-table,
+.prepaid-user-detail-table,
+.fleet-utilisation-table,
+.fleet-inactive-table,
+.object-health-table,
+.maintainance-reminder-table,
+.top-10-bad-drivers-table,
+.fleet-violation-table,
+.gps-model-summary-table,
+.safety-score-table,
+.expense-history-table,
+.project-vs-total-object-table,
+.fuel-refil-vs-drain-table,
+.postpaid-user-detail-table,
+.fuel-vs-distance-table,
+.fleet-idling-table,
+.fitness-certificate-due-table,
+.fitness-certificate-overdue-table,
+.fitness-certificate-upcoming-table,
+.insurance-due-table,
+.insurance-overdue-table,
+.insurance-upcoming-table,
+.object-health-minor-table,
+.object-health-major-table,
+.object-health-critical-table,
+.oil-change-due-table,
+.oil-change-overdue-table,
+.oil-change-upcoming-table,
+.coolant-flush-due-table,
+.coolant-flush-overdue-table,
+.coolant-flush-upcoming-table,
+.car-wash-due-table,
+.car-wash-overdue-table,
+.car-wash-upcoming-table,
+.general-servicing-due-table,
+.general-servicing-overdue-table,
+.general-servicing-upcoming-table,
+.travel-distance-table,
+.total-trip-table,
+.driving-duration-table,
+.idle-duration-table,
+.stop-duration-table,
+.inactive-duration-table,
+.average-speed-table,
+.maximum-speed-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    border-spacing: 1px;
+    background: white;
+    display: table;
+    border-color: grey;
+}
+
+.fleet-parking-table th,
+.renewal-reminders-table th,
+.prepaid-user-detail-table th,
+.fleet-utilisation-table th,
+.fleet-inactive-table th,
+.object-health-table th,
+.maintainance-reminder-table th,
+.top-10-bad-drivers-table th,
+.fleet-violation-table th,
+.gps-model-summary-table th,
+.safety-score-table th,
+.expense-history-table th,
+.project-vs-total-object-table th,
+.fuel-refil-vs-drain-table th,
+.postpaid-user-detail-table th,
+.fuel-vs-distance-table th,
+.fleet-idling-table th,
+.fitness-certificate-due-table th,
+.fitness-certificate-overdue-table th,
+.fitness-certificate-upcoming-table th,
+.insurance-due-table th,
+.insurance-overdue-table th,
+.insurance-upcoming-table th,
+.object-health-minor-table th,
+.object-health-major-table th,
+.object-health-critical-table th,
+.oil-change-due-table th,
+.oil-change-overdue-table th,
+.oil-change-upcoming-table th,
+.coolant-flush-due-table th,
+.coolant-flush-overdue-table th,
+.coolant-flush-upcoming-table th,
+.car-wash-due-table th,
+.car-wash-overdue-table th,
+.car-wash-upcoming-table th,
+.general-servicing-due-table th,
+.general-servicing-overdue-table th,
+.general-servicing-upcoming-table th,
+.travel-distance-table th,
+.total-trip-table th,
+.driving-duration-table th,
+.idle-duration-table th,
+.stop-duration-table th,
+.inactive-duration-table th,
+.average-speed-table th,
+.maximum-speed-table th {
+    width: 10%;
+    display: table-cell;
+    font-size: 11px;
+    color: rgb(68, 68, 68);
+    background-color: rgb(245, 245, 245);
+    padding: 5px 0px;
+    border-top: 0px solid rgb(171, 173, 183);
+    border-right: 1px solid rgb(229, 229, 229);
+    border-bottom: 1px solid rgb(229, 229, 229) !important;
+    text-align: center;
+}
+
+.fleet-parking-table td,
+.renewal-reminders-table td,
+.prepaid-user-detail-table td,
+.fleet-utilisation-table td,
+.fleet-inactive-table td,
+.object-health-table td,
+.maintainance-reminder-table td,
+.top-10-bad-drivers-table td,
+.fleet-violation-table td,
+.gps-model-summary-table td,
+.safety-score-table td,
+.expense-history-table td,
+.project-vs-total-object-table td,
+.fuel-refil-vs-drain-table td,
+.postpaid-user-detail-table td,
+.fuel-vs-distance-table td,
+.fleet-idling-table td,
+.fitness-certificate-due-table td,
+.fitness-certificate-overdue-table td,
+.fitness-certificate-upcoming-table td,
+.insurance-due-table td,
+.insurance-overdue-table td,
+.insurance-upcoming-table td,
+.object-health-minor-table td,
+.object-health-major-table td,
+.object-health-critical-table td,
+.oil-change-due-table td,
+.oil-change-overdue-table td,
+.oil-change-upcoming-table td,
+.coolant-flush-due-table td,
+.coolant-flush-overdue-table td,
+.coolant-flush-upcoming-table td,
+.car-wash-due-table td,
+.car-wash-overdue-table td,
+.car-wash-upcoming-table td,
+.general-servicing-due-table td,
+.general-servicing-overdue-table td,
+.general-servicing-upcoming-table td,
+.travel-distance-table td,
+.total-trip-table td,
+.driving-duration-table td,
+.idle-duration-table td,
+.stop-duration-table td,
+.inactive-duration-table td,
+.average-speed-table td,
+.maximum-speed-table td {
+    display: table-cell;
+    font-size: 11px;
+    background-color: #ffffff;
+    padding: 8px 0;
+    border: 1px solid rgb(229, 229, 229);
+    text-align: center;
+    font-weight: 400;
+}
+
+.object-health table img:hover,
+.oil-change-due:hover,
+.oil-change-overdue:hover,
+.oil-change-upcoming:hover,
+.coolant-flush-due:hover,
+.coolant-flush-overdue:hover,
+.coolant-flush-upcoming:hover,
+.car-wash-due:hover,
+.car-wash-overdue:hover,
+.car-wash-upcoming:hover,
+.general-servicing-due:hover,
+.general-servicing-overdue:hover,
+.general-servicing-upcoming:hover,
+.fitness-certificate-due:hover,
+.fitness-certificate-overdue:hover,
+.fitness-certificate-upcoming:hover,
+.insurance-due:hover,
+.insurance-overdue:hover,
+.insurance-upcoming:hover {
+    cursor: pointer;
+    color: blue;
+    background-color: aliceblue;
+}
+
+
+/* Modals */
+
+.fitness-certificate-due-modal,
+.fitness-certificate-overdue-modal,
+.fitness-certificate-upcoming-modal,
+.insurance-due-modal,
+.insurance-overdue-modal,
+.insurance-upcoming-modal,
+.object-health-minor-modal,
+.object-health-major-modal,
+.object-health-critical-modal,
+.oil-change-due-modal,
+.oil-change-overdue-modal,
+.oil-change-upcoming-modal,
+.coolant-flush-due-modal,
+.coolant-flush-overdue-modal,
+.coolant-flush-upcoming-modal,
+.car-wash-due-modal,
+.car-wash-overdue-modal,
+.car-wash-upcoming-modal,
+.general-servicing-due-modal,
+.general-servicing-overdue-modal,
+.general-servicing-upcoming-modal,
+.help-description-modal,
+.help-manual-modal,
+.help-how-to-modal,
+.travel-distance-modal,
+.total-trip-modal,
+.driving-duration-modal,
+.idle-duration-modal,
+.stop-duration-modal,
+.inactive-duration-modal,
+.average-speed-modal,
+.maximum-speed-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.fitness-certificate-due-modal-content,
+.fitness-certificate-overdue-modal-content,
+.fitness-certificate-upcoming-modal-content,
+.insurance-due-modal-content,
+.insurance-overdue-modal-content,
+.insurance-upcoming-modal-content,
+.object-health-minor-modal-content,
+.object-health-major-modal-content,
+.object-health-critical-modal-content,
+.oil-change-due-modal-content,
+.oil-change-overdue-modal-content,
+.oil-change-upcoming-modal-content,
+.coolant-flush-due-modal-content,
+.coolant-flush-overdue-modal-content,
+.coolant-flush-upcoming-modal-content,
+.car-wash-due-modal-content,
+.car-wash-overdue-modal-content,
+.car-wash-upcoming-modal-content,
+.general-servicing-due-modal-content,
+.general-servicing-overdue-modal-content,
+.general-servicing-upcoming-modal-content,
+.help-description-modal-content,
+.help-manual-modal-content,
+.help-how-to-modal-content,
+.travel-distance-modal-content,
+.total-trip-modal-content,
+.driving-duration-modal-content,
+.idle-duration-modal-content,
+.stop-duration-modal-content,
+.inactive-duration-modal-content,
+.average-speed-modal-content,
+.maximum-speed-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 92%;
+    height: 500px;
+    position: relative;
+}
+
+.fitness-certificate-due-heading-box ul li,
+.fitness-certificate-overdue-heading-box ul li,
+.fitness-certificate-upcoming-heading-box ul li,
+.insurance-due-heading-box ul li,
+.insurance-overdue-heading-box ul li,
+.insurance-upcoming-heading-box ul li,
+.object-health-minor-heading-box ul li,
+.object-health-major-heading-box ul li,
+.object-health-critical-heading-box ul li,
+.oil-change-due-heading-box ul li,
+.oil-change-overdue-heading-box ul li,
+.oil-change-upcoming-heading-box ul li,
+.coolant-flush-due-heading-box ul li,
+.coolant-flush-overdue-heading-box ul li,
+.coolant-flush-upcoming-heading-box ul li,
+.car-wash-due-heading-box ul li,
+.car-wash-overdue-heading-box ul li,
+.car-wash-upcoming-heading-box ul li,
+.general-servicing-due-heading-box ul li,
+.general-servicing-overdue-heading-box ul li,
+.general-servicing-upcoming-heading-box ul li,
+.help-description-heading-box ul li,
+.help-manual-heading-box ul li,
+.help-how-to-heading-box ul li,
+.travel-distance-heading-box ul li,
+.total-trip-heading-box ul li,
+.driving-duration-heading-box ul li,
+.idle-duration-heading-box ul li,
+.stop-duration-heading-box ul li,
+.inactive-duration-heading-box ul li,
+.average-speed-heading-box ul li,
+.maximum-speed-heading-box ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 14px;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.fitness-certificate-due-heading-box,
+.fitness-certificate-overdue-heading-box,
+.fitness-certificate-upcoming-heading-box,
+.insurance-due-heading-box,
+.insurance-overdue-heading-box,
+.insurance-upcoming-heading-box,
+.object-health-minor-heading-box,
+.object-health-major-heading-box,
+.object-health-critical-heading-box,
+.oil-change-due-heading-box,
+.oil-change-overdue-heading-box,
+.oil-change-upcoming-heading-box,
+.coolant-flush-due-heading-box,
+.coolant-flush-overdue-heading-box,
+.coolant-flush-upcoming-heading-box,
+.car-wash-due-heading-box,
+.car-wash-overdue-heading-box,
+.car-wash-upcoming-heading-box,
+.general-servicing-due-heading-box,
+.general-servicing-overdue-heading-box,
+.general-servicing-upcoming-heading-box,
+.help-description-heading-box,
+.help-manual-heading-box,
+.help-how-to-heading-box,
+.travel-distance-heading-box,
+.total-trip-heading-box,
+.driving-duration-heading-box,
+.idle-duration-heading-box,
+.stop-duration-heading-box,
+.inactive-duration-heading-box,
+.average-speed-heading-box,
+.maximum-speed-heading-box {
+    width: 100%;
+    height: 8%;
+    background-color: #234292;
+}
+
+.fitness-certificate-due-heading,
+.fitness-certificate-overdue-heading,
+.fitness-certificate-upcoming-heading,
+.insurance-due-heading,
+.insurance-overdue-heading,
+.insurance-upcoming-heading,
+.object-health-major-heading,
+.object-health-minor-heading,
+.object-health-critical-heading,
+.oil-change-due-heading,
+.oil-change-overdue-heading,
+.oil-change-upcoming-heading,
+.coolant-flush-due-heading,
+.coolant-flush-overdue-heading,
+.coolant-flush-upcoming-heading,
+.car-wash-due-heading,
+.car-wash-overdue-heading,
+.car-wash-upcoming-heading,
+.general-servicing-due-heading,
+.general-servicing-due-heading,
+.general-servicing-overdue-heading,
+.help-description-heading,
+.help-manual-heading,
+.help-how-to-heading,
+.travel-distance-modal-heading,
+.total-trip-modal-heading,
+.driving-duration-modal-heading,
+.idle-duration-modal-heading,
+.stop-duration-modal-heading,
+.inactive-duration-modal-heading,
+.average-speed-modal-heading,
+.maximum-speed-modal-heading {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.fitness-certificate-due-modal-cross,
+.fitness-certificate-overdue-modal-cross,
+.fitness-certificate-upcoming-modal-cross,
+.insurance-due-modal-cross,
+.insurance-overdue-modal-cross,
+.insurance-upcoming-modal-cross,
+.object-health-minor-modal-cross,
+.object-health-major-modal-cross,
+.object-health-critical-modal-cross,
+.oil-change-due-modal-cross,
+.oil-change-overdue-modal-cross,
+.oil-change-upcoming-modal-cross,
+.coolant-flush-due-modal-cross,
+.coolant-flush-overdue-modal-cross,
+.coolant-flush-upcoming-modal-cross,
+.car-wash-due-modal-cross,
+.car-wash-overdue-modal-cross,
+.car-wash-upcoming-modal-cross,
+.general-servicing-due-modal-cross,
+.general-servicing-overdue-modal-cross,
+.general-servicing-upcoming-modal-cross,
+.help-description-modal-cross,
+.help-manual-modal-cross,
+.help-how-to-modal-cross,
+.travel-distance-modal-cross,
+.total-trip-modal-cross,
+.driving-duration-modal-cross,
+.idle-duration-modal-cross,
+.stop-duration-modal-cross,
+.inactive-duration-modal-cross,
+.average-speed-modal-cross,
+.maximum-speed-modal-cross {
+    float: right;
+    cursor: pointer;
+}
+
+.description-modal-heading {
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding: 5px 50%;
+    font-weight: 600;
+}
+
+.help-description-table {
+    display: block;
+    position: absolute;
+    margin: 10px 10%;
+    font-size: 14px;
+    border: 1px solid #c9c9c9;
+    -webkit-box-shadow: 0 2px 2px #848484;
+    box-shadow: 0 2px 2px #848484;
+}
+
+.help-description-table tr td {
+    width: 30%;
+    margin: 3px;
+    border: 1px solid beige;
+    padding: 5px;
+}
+
+.help-description-table tr td:nth-child(odd) {
+    font-weight: 600;
+}
+
+.help-manual-iframe {
+    height: 95%;
+    width: 100%;
+}
