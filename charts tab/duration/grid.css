@@ -1,0 +1,44 @@
+.col {
+    display: block;
+    float: left;
+}
+
+.col:first-child {
+    margin-left: -7.03%;
+}
+
+.span-2-of-3 {
+    width: 60%;
+}
+
+.span-1-of-3 {
+    border-right: 1px solid black;
+    width: 40%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 1022px) {
+    .span-2-of-3 {
+        width: 59%;
+    }
+    .span-1-of-3 {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .col:first-child {
+        margin-left: 0;
+    }
+    .span-3-of-3 {
+        width: 100%;
+    }
+    .span-2-of-3 {
+        width: 100%;
+    }
+    .span-1-of-3 {
+        width: 100%;
+    }
+}
