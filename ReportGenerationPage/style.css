@@ -398,3 +398,452 @@ display: inline-block;
    padding: 10px 16px ;
   
 }
+
+
+
+form {
+    margin: 0px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+div.bottombox {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+}
+
+h1, h2, h3, h4, p, ul, ol, li, div, address, blockquote, nobr, b, i, a {
+    font-family: "Open Sans", sans-serif;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+table {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: grey;
+    font-variant: normal;
+}
+
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: separate;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    font-variant: normal;
+}
+
+
+tr {
+    vertical-align: middle;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+
+
+td, th {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+td {
+    vertical-align: middle;
+    width: 40%;
+    height: 100%;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+
+td, th {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+td {
+    vertical-align: middle;
+    text-align: -webkit-right;
+    width: 18%;
+    height: 100%;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+td, th {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+td {
+    vertical-align: middle;
+    text-align: -webkit-left;
+    width: 3%;
+    height: 100%;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+
+td, th {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+td {
+    text-align: -webkit-right;
+    vertical-align: middle;
+    width: 32%;
+    height: 100%;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+tr {
+    vertical-align: middle;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table
+ {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: grey;
+    font-variant: normal;
+}
+
+
+div.bottombox {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+}
+
+h1, h2, h3, h4, p, ul, ol, li, div, address, blockquote, nobr, b, i, a {
+    font-family: "Open Sans", sans-serif;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+textarea, input, select {
+    font-size: 12px;
+    color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 24px !important;
+    outline: rgb(204, 204, 204) solid 1px;
+    border-radius: 0px;
+    padding: 0px 3px;
+    background: transparent !important;
+    border-width: 0px !important;
+    border-style: initial !important;
+    border-color: initial !important;
+    border-image: initial !important;
+}
+
+input, textarea, keygen, select, button {
+    font-family: "Open Sans", sans-serif;
+}
+user agent stylesheet
+input:not([type="image" ]) {
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="hidden" ] {
+    display: none;
+    -webkit-appearance: initial;
+    background-color: initial;
+    cursor: default;
+    padding: initial;
+    border: initial;
+}
+user agent stylesheet
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+
+textarea, input, select {
+    font-size: 12px;
+    color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 24px !important;
+    outline: rgb(204, 204, 204) solid 1px;
+    border-radius: 0px;
+    padding: 0px 3px;
+    background: transparent !important;
+    border-width: 0px !important;
+    border-style: initial !important;
+    border-color: initial !important;
+    border-image: initial !important;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(153, 153, 153) !important;
+}
+input, textarea, keygen, select, button {
+    font-family: "Open Sans", sans-serif;
+}
+user agent stylesheet
+input:not([type="image" ]) {
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="hidden" ] {
+    display: none;
+    -webkit-appearance: initial;
+    background-color: initial;
+    cursor: default;
+    padding: initial;
+    border: initial;
+}
+user agent stylesheet
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+user agent stylesheet
+html {
+    display: block;
+}
+.bottom-icon-box .ft-icon:first-child {
+    color: rgb(255, 255, 255) !important;
+    background: rgb(35, 66, 146) !important;
+}
+
+.ft-icon:first-child {
+    background-color: rgb(171, 171, 171);
+}
+
+a:link {
+    vertical-align: middle;
+    display: inline;
+    text-decoration: none;
+}
+
+.ft-icon {
+    font-size: 16px;
+    color: rgb(35, 66, 146);
+    padding: 12px;
+}
+
+.navItem {
+    float: left;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    margin: 0px;
+}
+
+.ft-icon {
+    color: rgb(35, 66, 146) !important;
+}
+
+footer{
+  bottom: 100px;
+}
