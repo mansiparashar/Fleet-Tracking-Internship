@@ -1,0 +1,635 @@
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+    margin-top: 5%;
+    width: 100%;
+}
+
+.postnav {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.postActions {
+    padding: 10px;
+    width: 15vw;
+    text-align: center;
+}
+
+.postActions h1 {
+    font-size: 1rem;
+    display: inline;
+    /* color: #626262; */
+    font-weight: 600;
+}
+
+.fa-quote-left {
+    color: coral;
+}
+
+.fa-camera {
+    color: #8080ff;
+}
+
+.fa-pencil-alt {
+    color: #0feba1;
+}
+
+.postActions:hover:not(.active) {
+    cursor: pointer;
+    animation-name: navhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navhover {
+    from {
+        background-color: #62626200;
+        color: #626262;
+    }
+    to {
+        background-color: #626262;
+        color: #fff;
+    }
+}
+
+.active {
+    background-color: #626262;
+    color: white !important;
+    cursor: pointer;
+}
+
+.round1 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.round2 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.postfield {
+    margin: auto;
+    margin-top: 2%;
+    width: 60%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    -webkit-box-shadow: 10px 10px 33px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 33px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 33px -9px rgba(0, 0, 0, 0.75);
+}
+
+.postfield textarea {
+    resize: none;
+    border: none;
+    height: 18vh;
+    width: 100%;
+}
+
+.fa-paperclip {
+    color: #9669c9;
+}
+
+.fa-image {
+    color: #44c477;
+}
+
+.hide {
+    display: block;
+}
+
+.upload {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    cursor: pointer;
+    background-color: rgb(225, 236, 242);
+}
+
+
+/* .upload:hover {
+    background-color: rgb(225, 236, 242);
+} */
+
+.fa-5x {
+    /* font-size: 5em !important; */
+    animation-name: upload;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes upload {
+    from {
+        font-size: 0.875em;
+    }
+    to {
+        font-size: 5em;
+    }
+}
+
+.writePost {
+    display: none;
+}
+
+.fieldFooter {
+    /* padding: 10px; */
+    height: 36px;
+    margin-bottom: 0px;
+    background-color: rgb(225, 236, 242);
+}
+
+.fa-paperclip,
+.fa-image {
+    float: left;
+    margin-left: 12px;
+    padding-top: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.postBtn {
+    float: right;
+    width: 60px;
+    background-color: #5ad5e7;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.postBtn:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+    -webkit-box-shadow: 10px 10px 33px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 33px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 33px -9px rgba(0, 0, 0, 0.75);
+}
+
+.name h1,
+h2 {
+    display: inline;
+    margin: auto;
+}
+
+.name h1 {
+    font-size: 1.5em;
+    color: #2199be;
+    font-weight: 600;
+}
+
+.name h2 {
+    font-size: 1em;
+    color: #626262;
+}
+
+.name img {
+    border-radius: 100%;
+    width: 70px;
+    position: relative;
+    right: 25px;
+    top: 20px;
+}
+
+.opPost {
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.opPost p {
+    font-size: 0.875em;
+    font-weight: 600;
+    color: rgba(98, 98, 98, 0.675);
+}
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    align-items: center;
+    width: 100%;
+}
+
+.profilePic img {
+    border-radius: 100%;
+    width: 50px;
+   
+}
+
+.cmntContentWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.commenterNmae,
+.commentContent {
+    display: inline;
+}
+
+.commenterName h1 {
+    font-size: 1.5em;
+    color: #2199be;
+    display: inline;
+}
+
+
+/* .commentContent p {
+    font-size: 0.875em;
+    color: #626262;
+} */
+
+.commenterName p {
+    font-size: 0.8em;
+    color: #626262;
+    display: inline;
+    margin-left: 2%;
+}
+
+.addCommentWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.addComment {
+    resize: none;
+    /* margin: auto; */
+}
+
+.commentBtn {
+    width: 50px;
+    align-self: flex-end;
+    background-color: #5ad5e7;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    margin-top: 2%;
+    cursor: pointer;
+    box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.15);
+}
+
+.commentBtn:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+    from {
+        background-color: #5ad5e7;
+    }
+    to {
+        background-color: #25abc0;
+    }
+}
+
+.contentWrapper .imgMain {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.interactionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.like h1,
+.cmnt h1,
+.share h1 {
+    display: inline;
+    font-size: 1em;
+    font-weight: 600;
+    color: #626262;
+    cursor: pointer;
+}
+
+.fa-heart {
+    color: rgb(240, 118, 118);
+    cursor: pointer;
+}
+
+.red {
+    animation-name: like, grow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes like {
+    from {
+        color: rgb(240, 118, 118);
+        font-size: 1em;
+    }
+    to {
+        color: #fb3958;
+        font-size: 1.5em;
+    }
+}
+
+@keyframes grow {
+    from {
+        font-size: 1.5em;
+    }
+    to {
+        font-size: 1em;
+    }
+}
+
+.fa-comment {
+    color: #8d8dd4;
+    cursor: pointer;
+}
+
+.fa-share-alt {
+    color: #40ad6c;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1172px) {
+    .postActions h1,
+    .fa-quote-left,
+    .fa-camera,
+    .fa-pencil-alt {
+        font-size: 0.9rem;
+        display: inline;
+        /* color: #626262; */
+        font-weight: 600;
+    }
+    .postActions {
+        padding: 10px;
+        width: 18vw;
+        text-align: center;
+    }
+    .postfield {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .contentWrapper {
+        width: 80%;
+    }
+    .name {
+        text-align: center;
+    }
+    .name img {
+        display: block;
+        position: relative;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .name h1 {
+        font-size: 1em;
+        color: #2199be;
+        font-weight: 600;
+    }
+    .name h2 {
+        font-size: 0.8em;
+        color: #626262;
+    }
+    .opPost p {
+        font-size: 0.850em;
+        font-weight: 600;
+        color: rgba(98, 98, 98, 0.675);
+    }
+    .commenterName h1 {
+        font-size: 1em;
+        color: #2199be;
+        display: inline;
+    }
+    .profilePic img {
+        border-radius: 100%;
+        width: 50px;
+        margin-left: 10%;
+    }
+}
+
+
+}
+@media only screen and (max-width: 991px) {
+    .postActions h1,
+    .fa-quote-left,
+    .fa-camera,
+    .fa-pencil-alt {
+        font-size: 0.9rem;
+        display: inline;
+        /* color: #626262; */
+        font-weight: 600;
+    }
+    
+    .postActions {
+        padding: 10px;
+        width: 18vw;
+        text-align: center;
+    }
+    
+    .postfield {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 895px) {
+    .postActions h1,
+    .fa-quote-left,
+    .fa-camera,
+    .fa-pencil-alt {
+        font-size: 0.85rem;
+        display: inline;
+        /* color: #626262; */
+        font-weight: 600;
+    }
+    
+    .postfield {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 848px) {
+    .postActions h1,
+    .fa-quote-left,
+    .fa-camera,
+    .fa-pencil-alt {
+        font-size: 0.65rem;
+        display: inline;
+        /* color: #626262; */
+        font-weight: 600;
+    }
+    
+    .postActions {
+        padding: 10px;
+        width: 19vw;
+        text-align: center;
+    }
+    
+    .postfield {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .postActions h1,
+    .fa-quote-left,
+    .fa-camera,
+    .fa-pencil-alt {
+        font-size: 0.6rem;
+        display: inline;
+        /* color: #626262; */
+        font-weight: 600;
+    }
+    
+    .postActions {
+        padding: 10px;
+        width: 19vw;
+        text-align: center;
+    }
+    
+    .postfield {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .postActions h1,
+    .fa-quote-left,
+    .fa-camera,
+    .fa-pencil-alt {
+        font-size: 0.5rem;
+    }
+    
+    .postActions {
+        padding: 4px;
+        width: 25vw;
+    }
+    
+    .postfield textarea {
+        height: 12vh;
+    }
+    
+    .upload {
+        height: 12vh;
+    }
+    
+    .contentWrapper {
+        width: 80%;
+    }
+}
